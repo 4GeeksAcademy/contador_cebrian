@@ -1,26 +1,60 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-            
+const Home = ({ count }) => {
+	const inicialCount = parseInt(count,10);
+	const centenasMillar = Math.floor(inicialCount/100000)%10;
+	const decenasMillar = Math.floor(inicialCount/10000)%10;
+	const millares = Math.floor(inicialCount/1000)%10;
+	const centenas = Math.floor(inicialCount/ 100)%10;
+	const decenas = Math.floor ( inicialCount / 10)%10;
+	const unidades = inicialCount % 10;
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+
+	return (
+		
+		<div className="text-center">
+			<h1 className="text-center mt-5 ">{count}</h1>
+			<div className=" contador d-flex border">
+				
+				<div className="digito icono-reloj">
+                    <i className="far fa-clock fa-spin"></i> 
+                </div>
+				
+				<div className="Digito d-flex">
+					{centenasMillar}
+
+				</div>
+				<div className="Digito d-flex">
+					{decenasMillar}
+
+				</div>
+				<div className="Digito d-flex">
+					{millares}
+
+				</div>
+				<div className="Digito d-flex">
+					{centenas}
+
+				</div>
+				<div className="Digito d-flex">
+					{decenas}
+
+				</div>
+				<div className="Digito d-flex">
+					{unidades}
+
+				</div>
+
+					
+				
+
+			</div>
+
 		</div>
 	);
 };

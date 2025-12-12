@@ -9,3 +9,42 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.contador{
+    background-color: #333333; 
+    border: 3px solid #555555;
+    border-radius: 12px;
+    padding: 10px 20px;
+    max-width: 900px; 
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+
+
+
+.Digito{
+    
+    font-size:  10rem;
+    font-weight: bold;
+    font-family:monospace;
+    color: #FF2E2E;
+    background: transparent;
+    padding: 0,30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+
+    
+}
+.icono-reloj .far.fa-clock { 
+    font-size: 7rem;
+    opacity: 0.6; 
+    margin-top: 60px;
+    margin-right: 10px;
+    color: white;
+}
