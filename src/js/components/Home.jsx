@@ -6,7 +6,7 @@ import React from "react";
 
 //create your first component
 const Home = ({ count }) => {
-	const inicialCount = parseInt(count,10);
+	const inicialCount = parseInt(count);
 	const centenasMillar = Math.floor(inicialCount/100000)%10;
 	const decenasMillar = Math.floor(inicialCount/10000)%10;
 	const millares = Math.floor(inicialCount/1000)%10;
